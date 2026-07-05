@@ -1,5 +1,23 @@
 # Branding
 
+## Tiếng Việt
+
+Đặt các asset riêng của distro tại đây cho:
+
+- boot splash
+- artwork cho installer
+- wallpapers
+- display manager themes
+
+Thư mục branding của Calamares hiện đang kỳ vọng:
+
+- `logo.png`
+- `welcome.png`
+
+Những file này chưa được đưa vào bộ khung hiện tại.
+
+## English
+
 Place distro-specific assets here for:
 
 - boot splash
