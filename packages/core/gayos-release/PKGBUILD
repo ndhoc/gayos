@@ -1,0 +1,26 @@
+pkgname=gayos-release
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Release files and pacman repository configuration for GayOS"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+depends=('filesystem')
+source=(
+  'os-release'
+  'lsb-release'
+  'gayos.conf'
+  'pacman.conf.append'
+  'issue'
+  'motd'
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+
+package() {
+  install -Dm644 os-release "$pkgdir/etc/os-release"
+  install -Dm644 lsb-release "$pkgdir/etc/lsb-release"
+  install -Dm644 gayos.conf "$pkgdir/etc/pacman.d/gayos.conf"
+  install -Dm644 pacman.conf.append "$pkgdir/usr/share/gayos/pacman.conf.append"
+  install -Dm644 issue "$pkgdir/etc/issue"
+  install -Dm644 motd "$pkgdir/etc/motd"
+}

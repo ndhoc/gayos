@@ -1,0 +1,17 @@
+pkgname=gayos-mirrorlist
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Mirrorlist package for GayOS repositories"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+source=(
+  'gayos-mirrorlist'
+  'mirrorlist-readme'
+)
+sha256sums=('SKIP' 'SKIP')
+
+package() {
+  install -Dm644 gayos-mirrorlist "$pkgdir/etc/pacman.d/gayos-mirrorlist"
+  install -Dm644 mirrorlist-readme "$pkgdir/usr/share/doc/$pkgname/README"
+}

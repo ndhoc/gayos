@@ -1,0 +1,11 @@
+NAME="GayOS"
+PRETTY_NAME="GayOS"
+ID=gayos
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;140;82;255"
+HOME_URL="https://os.18.io.vn/gayos"
+DOCUMENTATION_URL="https://os.18.io.vn/gayos/docs"
+SUPPORT_URL="https://os.18.io.vn/gayos/support"
+BUG_REPORT_URL="https://os.18.io.vn/gayos/issues"
+LOGO=archlinux-logo

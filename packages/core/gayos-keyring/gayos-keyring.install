@@ -1,0 +1,13 @@
+post_install() {
+  if command -v pacman-key >/dev/null 2>&1; then
+    pacman-key --init >/dev/null 2>&1 || true
+    pacman-key --populate archlinux >/dev/null 2>&1 || true
+    pacman-key --populate gayos >/dev/null 2>&1 || true
+  fi
+
+  echo "GayOS keyring installed. Replace placeholder keys before release shipping."
+}
+
+post_upgrade() {
+  post_install
+}
