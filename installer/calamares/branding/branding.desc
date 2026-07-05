@@ -1,0 +1,17 @@
+componentName: gayos
+welcomeStyleCalamares: true
+strings:
+  productName: GayOS
+  shortProductName: GayOS
+  version: 0.1.0
+  shortVersion: 0.1
+  versionedName: GayOS 0.1.0
+  shortVersionedName: GayOS 0.1
+  bootloaderEntryName: GayOS
+  productUrl: https://os.18.io.vn/gayos
+images:
+  productLogo: logo.png
+  productIcon: logo.png
+  productWelcome: welcome.png
+slideshowAPI: 1
+slideshow: slideshow.qml

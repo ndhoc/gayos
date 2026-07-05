@@ -1,0 +1,4 @@
+Expected branding assets:
+- logo.png
+- welcome.png
+- optional slideshow images referenced from slideshow.qml
