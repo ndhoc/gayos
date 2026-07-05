@@ -1,0 +1,12 @@
+dist/
+out/
+build/
+tmp/
+repo/x86_64/
+repo/staging/
+repo/testing/
+*.iso
+*.img
+*.sig
+*.pkg.tar.zst
+*.pkg.tar.zst.sig
