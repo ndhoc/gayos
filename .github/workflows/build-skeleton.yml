@@ -1,0 +1,17 @@
+name: build-skeleton
+
+on:
+  workflow_dispatch:
+
+jobs:
+  docs-and-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository layout
+        run: bash scripts/validate-layout.sh
+
+      - name: Print Arch build guidance
+        run: bash scripts/build-in-arch-container.sh
