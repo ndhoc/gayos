@@ -1,0 +1,22 @@
+pkgname=gayos-settings-kde
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="KDE Plasma defaults and desktop integration for GayOS"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+depends=('plasma-workspace' 'xdg-user-dirs')
+source=(
+  'kdeglobals'
+  'plasma-org.kde.plasma.desktop-appletsrc'
+  'konsolerc'
+  'mimeapps.list'
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP')
+
+package() {
+  install -Dm644 kdeglobals "$pkgdir/etc/skel/.config/kdeglobals"
+  install -Dm644 plasma-org.kde.plasma.desktop-appletsrc "$pkgdir/etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc"
+  install -Dm644 konsolerc "$pkgdir/etc/skel/.config/konsolerc"
+  install -Dm644 mimeapps.list "$pkgdir/etc/skel/.config/mimeapps.list"
+}

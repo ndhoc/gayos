@@ -1,0 +1,22 @@
+pkgname=gayos-sddm-theme
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="SDDM theme for GayOS"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+depends=('sddm')
+source=(
+  'theme.conf'
+  'metadata.desktop'
+  'Main.qml'
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP')
+
+package() {
+  theme_dir="$pkgdir/usr/share/sddm/themes/gayos"
+  install -d "$theme_dir"
+  install -Dm644 theme.conf "$theme_dir/theme.conf"
+  install -Dm644 metadata.desktop "$theme_dir/metadata.desktop"
+  install -Dm644 Main.qml "$theme_dir/Main.qml"
+}

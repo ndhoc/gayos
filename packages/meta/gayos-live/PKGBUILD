@@ -1,0 +1,17 @@
+pkgname=gayos-live
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Live environment metapackage for GayOS installation media"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+depends=(
+  'gayos-kde'
+  'calamares'
+  'networkmanager'
+  'firefox'
+)
+
+package() {
+  install -Dm644 /dev/null "$pkgdir/usr/share/licenses/$pkgname/placeholder"
+}

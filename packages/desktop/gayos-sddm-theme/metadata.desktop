@@ -1,0 +1,8 @@
+[SddmGreeterTheme]
+Name=GayOS
+Description=Minimal placeholder SDDM theme for GayOS
+Author=GayOS
+Version=0.1.0
+MainScript=Main.qml
+Theme-Id=gayos
+Theme-API=2.0

@@ -1,0 +1,24 @@
+pkgname=gayos-desktop-defaults
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Desktop defaults, sysctl tuning, and service presets for GayOS"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+depends=('systemd' 'zram-generator')
+source=(
+  'sysctl-99-gayos.conf'
+  'zram-generator.conf'
+  'sddm.conf.d-gayos.conf'
+  'greetd.conf'
+  'locale.conf'
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
+
+package() {
+  install -Dm644 sysctl-99-gayos.conf "$pkgdir/usr/lib/sysctl.d/99-gayos.conf"
+  install -Dm644 zram-generator.conf "$pkgdir/usr/lib/systemd/zram-generator.conf"
+  install -Dm644 sddm.conf.d-gayos.conf "$pkgdir/usr/lib/sddm/sddm.conf.d/gayos.conf"
+  install -Dm644 greetd.conf "$pkgdir/usr/share/gayos/examples/greetd.conf"
+  install -Dm644 locale.conf "$pkgdir/etc/locale.conf"
+}

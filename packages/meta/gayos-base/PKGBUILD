@@ -1,0 +1,24 @@
+pkgname=gayos-base
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Base metapackage for GayOS installations"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+depends=(
+  'base'
+  'linux'
+  'linux-firmware'
+  'networkmanager'
+  'sudo'
+  'nano'
+  'git'
+  'gayos-release'
+  'gayos-keyring'
+  'gayos-mirrorlist'
+  'gayos-desktop-defaults'
+)
+
+package() {
+  install -Dm644 /dev/null "$pkgdir/usr/share/licenses/$pkgname/placeholder"
+}

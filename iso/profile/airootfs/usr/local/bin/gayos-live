@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "GayOS live environment"
+echo "Use Calamares from the desktop session to install the system."

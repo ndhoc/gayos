@@ -1,0 +1,13 @@
+pkgname=gayos-wallpapers
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Wallpaper assets for GayOS"
+arch=('any')
+url="https://os.18.io.vn/gayos"
+license=('GPL-3.0-or-later')
+source=('default.svg')
+sha256sums=('SKIP')
+
+package() {
+  install -Dm644 default.svg "$pkgdir/usr/share/wallpapers/GayOS/default.svg"
+}
