@@ -1,0 +1,15 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  layout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository layout
+        run: bash scripts/validate-layout.sh
