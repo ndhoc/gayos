@@ -49,3 +49,11 @@ docs/
 - `gayos-sddm-theme`: display manager theme package
 - `gayos-wallpapers`: distro wallpaper assets package
 - `iso/profile`: live ISO embedding Calamares and the KDE flavor
+
+## Project Docs
+
+- `CONTRIBUTING.md`: contribution workflow and engineering expectations
+- `CODE_OF_CONDUCT.md`: community behavior expectations
+- `docs/architecture.md`: distro structure and package layering
+- `docs/build-environment.md`: Arch build environment and workflow
+- `docs/release-process.md`: package and ISO release process
